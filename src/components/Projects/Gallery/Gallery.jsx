@@ -19,7 +19,7 @@ export default function Gallery({ pics }) {
   };
   return (
     <div id="gallery" className="relative w-full" data-carousel="slide">
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-72">
+      <div className="h-56 overflow-hidden rounded-lg md:h-72">
         {pics.map((pic, idx) => {
           return (
             <div
