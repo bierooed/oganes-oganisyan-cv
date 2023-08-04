@@ -29,10 +29,10 @@ export default function Certificates() {
     <div className="text-center mt-16 p-4">
       {certificates.map(({ id, issued, pic, course, date, verifyUrl }) => {
         return (
-          <div key={id} className="flex items-center">
-            <img className="w-8" src={pic} />
+          <div key={id} className="w-full flex  items-center mb-12">
+            <img className="w-8 m-4" src={pic} />
 
-            <div className="w-full p-8">
+            <div className="w-full mb-4">
               <h3>{course}</h3>
               <p className="text-gray-600">
                 {issued} - {date}
