@@ -1,10 +1,7 @@
 import React from "react";
-import Gallery from "./Gallery/Gallery";
-import hyebox1 from "./hyebox/hyebox1.png";
-import hyebox2 from "./hyebox/hyebox2.png";
-import hyebox3 from "./hyebox/hyebox3.png";
-import hyebox4 from "./hyebox/hyebox4.png";
-import hyebox5 from "./hyebox/hyebox5.png";
+import hyeboxProject from "../../files/hyeboxProject.png";
+import cognitiveProject from "../../files/cognitiveProject.png";
+import Links from "./Links";
 
 const projects = [
   {
@@ -17,45 +14,87 @@ const projects = [
       "Payment Integration",
       "Facebook pixel",
     ],
-    pics: [hyebox1, hyebox2, hyebox3, hyebox4, hyebox5],
+    pic: hyeboxProject,
     role: "Fullstack Frontend Developer",
 
     description:
       "In this project I occupied the role of Fullstack Frontend Developer. I was creating a site for selling boxes with various souvenirs from Armenia. The purchase process was organized as a subscription, after selecting the desired tariff the user had to answer a few questions so that we could choose a box according to his preferences. The user then had to provide personal information and online payment for their subscription. After payment, the order was added to the database and to Google Spreadsheet for a more convenient interface to work with orders from users.",
+
+    links: [
+      {
+        id: 0,
+        href: "https://the-hyebox.vercel.app/",
+        innerText: "Non-production link",
+      },
+    ],
+  },
+
+  {
+    id: 1,
+    project: "Cognitive test",
+    stack: ["React", "Redux", "TensorflowJS", "Firebase", "Tailwind"],
+    pic: cognitiveProject,
+    role: "Fullstack Frontend Developer",
+    description:
+      "This project is my term paper. The basis of the project is the Kaufman psychological test, which helps people who do not have access to medicine to identify cognitive distortions in their children.",
+
+    links: [
+      {
+        id: 0,
+        href: "https://vercel.com/bierooed/cognitive-test",
+        innerText: "Non-production link",
+      },
+    ],
+
+    downloadedLinks: [
+      {
+        id: 0,
+        href: "/src/files/Developed with love in Armenia.pdf",
+        innerText: "Course work presentation (pdf)",
+      },
+      {
+        id: 1,
+        href: "/src/files/Курсовая работа Оганисян Оганес .pdf",
+        innerText: "Course work presentation",
+      },
+    ],
   },
 ];
 
 export default function Projects() {
   return (
     <div className="flex flex-col items-center p-4">
-      {projects.map(({ id, project, stack, description, pics }) => {
-        return (
-          <div key={id} className="text-center">
-            <Gallery pics={pics} />
-            <h3>{project}</h3>
-
-            <a
-              className="underline"
-              href="https://the-hyebox.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Non-production link
-            </a>
-            <p className="py-4">{description}</p>
-            <div className="flex justify-center flex-wrap">
-              {stack.map((tech, idx) => (
-                <span
-                  key={idx}
-                  className="inline-flex items-center gap-1.5 py-1.5 my-2 px-3 mx-2 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
-                >
-                  {tech}
-                </span>
-              ))}
+      {projects.map(
+        ({ id, project, stack, description, pic, links, downloadedLinks }) => {
+          return (
+            <div key={id} className="text-center border-b border-gray-300 mt-8">
+              <img src={pic} />
+              <h3>{project}</h3>
+              <div className="flex flex-col flex-wrap items-center justify-center">
+                <div className="flex flex-wrap justify-center items-center">
+                  {!!links && <Links links={links} />}
+                </div>
+                <div className="flex flex-wrap mt-3 justify-center items-center">
+                  {!!downloadedLinks && (
+                    <Links isDownload={true} links={downloadedLinks} />
+                  )}
+                </div>
+              </div>
+              <p className="py-4">{description}</p>
+              <div className="flex justify-center flex-wrap mb-6">
+                {stack.map((tech, idx) => (
+                  <span
+                    key={idx}
+                    className="inline-flex items-center gap-1.5 py-1.5 my-2 px-3 mx-2 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        }
+      )}
     </div>
   );
 }
