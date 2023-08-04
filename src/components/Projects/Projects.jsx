@@ -1,6 +1,7 @@
 import React from "react";
 import hyeboxProject from "../../files/hyeboxProject.png";
 import cognitiveProject from "../../files/cognitiveProject.png";
+import sightseeingProject from "../../files/sightseeingProject.png";
 import Links from "./Links";
 
 const projects = [
@@ -34,7 +35,6 @@ const projects = [
     project: "Cognitive test",
     stack: ["React", "Redux", "TensorflowJS", "Firebase", "Tailwind"],
     pic: cognitiveProject,
-    role: "Fullstack Frontend Developer",
     description:
       "This project is my term paper. The basis of the project is the Kaufman psychological test, which helps people who do not have access to medicine to identify cognitive distortions in their children.",
 
@@ -56,6 +56,22 @@ const projects = [
         id: 1,
         href: "/src/files/Курсовая работа Оганисян Оганес .pdf",
         innerText: "Course work presentation",
+      },
+    ],
+  },
+
+  {
+    id: 2,
+    project: "Sightseeing",
+    stack: ["React", "Teachable Machine"],
+    pic: sightseeingProject,
+    description:
+      " The idea of project is to recognize landmarks and beautiful buildings of Yerevan, the user uploads a photo and the trained model tries to recognize and tell the user about this building. Only a draft version of the site is still ready, but the idea is fully realized.",
+    links: [
+      {
+        id: 0,
+        href: "https://sightseeing.vercel.app/",
+        innerText: "Non-production link",
       },
     ],
   },
