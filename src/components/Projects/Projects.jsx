@@ -43,7 +43,7 @@ export default function Projects() {
               Non-production link
             </a>
             <p className="py-4">{description}</p>
-            <div className="flex justify-start flex-wrap">
+            <div className="flex justify-center flex-wrap">
               {stack.map((tech, idx) => (
                 <span
                   key={idx}
