@@ -30,7 +30,7 @@ export default function Navigation() {
           </svg>
         </button>
         <div className={`${dropdown ? "" : "hidden"} w-full`}>
-          <div className="flex flex-col font-medium mt-4 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+          <div className="flex flex-col font-medium mt-4 rounded-lg">
             <NavigationLink path={paths.home} innerText="About me" />
             <NavigationLink path={paths.projects} innerText="Projects" />
             <NavigationLink path={paths.library} innerText="Library" />
