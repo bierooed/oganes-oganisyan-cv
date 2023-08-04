@@ -6,8 +6,10 @@ export default function NavigationLink({ path, innerText }) {
     <NavLink
       to={path}
       className={({ isActive }) => {
-        const classname = "block py-2 pl-3 pr-4 text-white bg-gray-800 rounded";
-        return isActive ? classname : classname + " bg-white text-gray-700";
+        const classname = "block py-2 pl-3 pr-4 bg-gray-800 rounded";
+        return isActive
+          ? classname + " text-white"
+          : classname + " bg-white text-gray-700";
       }}
     >
       {innerText}
