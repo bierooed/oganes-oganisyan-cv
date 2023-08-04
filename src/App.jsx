@@ -11,7 +11,7 @@ function App() {
         <Navigation />
       </header>
 
-      <main className="w-full mt-20">
+      <main className="w-full mt-8">
         <Routes>
           <Route path={paths.home} element={<HomePage />} />
         </Routes>
