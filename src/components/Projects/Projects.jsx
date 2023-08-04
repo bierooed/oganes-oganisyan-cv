@@ -3,6 +3,7 @@ import hyeboxProject from "../../files/hyeboxProject.png";
 import cognitiveProject from "../../files/cognitiveProject.png";
 import sightseeingProject from "../../files/sightseeingProject.png";
 import tmImageModelProject from "../../files/tm-image-model-project.png";
+import randomQuoteProject from "../../files/randomQuoteProject.png";
 import Links from "./Links";
 
 const projects = [
@@ -89,6 +90,21 @@ const projects = [
         id: 0,
         href: "https://www.npmjs.com/package/tm-image-model",
         innerText: "npm package",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    project: "Random Quote Machine",
+    stack: ["JavaScript"],
+    pic: randomQuoteProject,
+    description: "Just random quotes!",
+    links: [
+      {
+        id: 0,
+        href: "https://random-quote-machine-bierooed.vercel.app/",
+        innerText: "Project link",
       },
     ],
   },
