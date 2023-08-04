@@ -2,6 +2,7 @@ import React from "react";
 import hyeboxProject from "../../files/hyeboxProject.png";
 import cognitiveProject from "../../files/cognitiveProject.png";
 import sightseeingProject from "../../files/sightseeingProject.png";
+import tmImageModelProject from "../../files/tm-image-model-project.png";
 import Links from "./Links";
 
 const projects = [
@@ -72,6 +73,22 @@ const projects = [
         id: 0,
         href: "https://sightseeing.vercel.app/",
         innerText: "Non-production link",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    project: "Teachable Machine model to classify images",
+    stack: ["JavaScript", "Tensorflow"],
+    pic: tmImageModelProject,
+    description:
+      "Package provides the ability to easily customize a model trained in Teachable Machine into your project",
+    links: [
+      {
+        id: 0,
+        href: "https://www.npmjs.com/package/tm-image-model",
+        innerText: "npm package",
       },
     ],
   },
