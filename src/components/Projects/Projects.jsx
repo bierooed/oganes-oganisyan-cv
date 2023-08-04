@@ -95,7 +95,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     project: "Random Quote Machine",
     stack: ["JavaScript"],
     pic: randomQuoteProject,
@@ -108,6 +108,65 @@ const projects = [
       },
     ],
   },
+
+  {
+    id: 5,
+    project: "My articles",
+    stack: ["📝", "Writing"],
+    description: "I've left links to my articles here",
+    links: [
+      {
+        id: 0,
+        href: "https://dev.to/oganes/genre-recognition-teachable-machine-a2k",
+        innerText: "Genre recognition & Teachable Machine",
+      },
+
+      {
+        id: 1,
+        href: "https://telegra.ph/Superficial-about-script-fonts-03-15",
+        innerText: "Superficial About Script Fonts",
+      },
+
+      {
+        id: 2,
+        href: "https://telegra.ph/O-voobrazhenii-i-skazkah-07-13",
+        innerText: "About imagination and fairy tales (ru)",
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    project: "Additionally",
+    stack: ["C++", "NodeJS", "Linux"],
+    description:
+      "Here are links to some of the small projects I've done while learning new skills",
+    links: [
+      {
+        id: 0,
+        href: "https://replit.com/@bierooed/GAMEwordJumble-20",
+        innerText: "Word Jumble",
+      },
+
+      {
+        id: 1,
+        href: "https://replit.com/@bierooed/guessMyNumber#main.cpp",
+        innerText: "Guess my number",
+      },
+
+      {
+        id: 2,
+        href: "https://github.com/bierooed/exploringNodejs",
+        innerText: "Exploring NodeJS",
+      },
+
+      {
+        id: 3,
+        href: "https://github.com/bierooed/Linux-Tasks",
+        innerText: "Linux tasks",
+      },
+    ],
+  },
 ];
 
 export default function Projects() {
@@ -116,7 +175,12 @@ export default function Projects() {
       {projects.map(
         ({ id, project, stack, description, pic, links, downloadedLinks }) => {
           return (
-            <div key={id} className="text-center border-b border-gray-300 mt-8">
+            <div
+              key={id}
+              className={`text-center ${
+                id === projects.length - 1 ? "" : "border-b border-gray-300"
+              } mt-8`}
+            >
               <img src={pic} />
               <h3>{project}</h3>
               <div className="flex flex-col flex-wrap items-center justify-center">
