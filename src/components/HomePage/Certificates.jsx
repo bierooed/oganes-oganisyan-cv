@@ -26,10 +26,10 @@ const certificates = [
 
 export default function Certificates() {
   return (
-    <div className="text-center mt-16 p-4">
+    <div className="flex md:flex-nowrap xs: flex-wrap justify-between w-full text-center md:mt-28 xs: mt-8 p-4">
       {certificates.map(({ id, issued, pic, course, date, verifyUrl }) => {
         return (
-          <div key={id} className="w-full flex  items-center mb-12">
+          <div key={id} className="w-full flex flex-col  items-center mb-12">
             <img className="w-8 m-4" src={pic} />
 
             <div className="w-full mb-4">
