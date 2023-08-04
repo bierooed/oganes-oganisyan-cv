@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation/Navigation";
 import { Route, Routes } from "react-router-dom";
 import { paths } from "./paths";
 import HomePage from "./components/HomePage/HomePage";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main className="w-full mt-8">
         <Routes>
           <Route path={paths.home} element={<HomePage />} />
+          <Route path={paths.projects} element={<Projects />} />
         </Routes>
       </main>
     </div>
