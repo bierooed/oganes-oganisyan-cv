@@ -6,7 +6,7 @@ import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center items-start mx-auto mb-16 max-w-xl">
+    <div className="flex flex-col justify-center items-start mx-auto max-w-xl">
       <header className="w-full">
         <Navigation />
       </header>
