@@ -1,10 +1,13 @@
 import { useState } from "react";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
-    <>
-      <h1>CVfollo</h1>
-    </>
+    <div>
+      <header>
+        <Navigation />
+      </header>
+    </div>
   );
 }
 
