@@ -1,5 +1,6 @@
 import React from "react";
-import avatar from "../files/avatar.png";
+import avatar from "../../files/avatar.png";
+import Certificates from "./Certificates";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,8 @@ export default function HomePage() {
           I'm a Junior Engineer with a passion for design and project creation
         </p>
       </div>
+
+      <Certificates />
     </div>
   );
 }

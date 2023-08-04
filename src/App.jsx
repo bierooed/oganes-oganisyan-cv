@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Navigation from "./components/Navigation/Navigation";
-import HomePage from "./components/HomePage";
+import { Route, Routes } from "react-router-dom";
+import { paths } from "./paths";
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       </header>
 
       <main className="w-full mt-20">
-        <HomePage />
+        <Routes>
+          <Route path={paths.home} element={<HomePage />} />
+        </Routes>
       </main>
     </div>
   );
