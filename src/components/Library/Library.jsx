@@ -11,8 +11,8 @@ const favoriteBooks = [
 
   {
     id: 1,
-    author: "A Short History of Nearly Everything",
-    title: "Bill Bryson",
+    author: "Bill Bryson",
+    title: "A Short History of Nearly Everything",
     type: "non-fiction",
   },
   {
