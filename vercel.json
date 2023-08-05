@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/src/files/Oganisyan-Oganes-CV.pdf"
+      "destination": "/index.html"
     }
   ],
   "routes": [
