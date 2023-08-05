@@ -33,7 +33,6 @@ export default function Navigation() {
           <NavigationLink path={paths.home} innerText="About me" />
           <NavigationLink path={paths.projects} innerText="Projects" />
           <NavigationLink path={paths.library} innerText="Library" />
-          <NavigationLink path={paths.cv} innerText="CV" />
         </div>
       </div>
     </nav>
