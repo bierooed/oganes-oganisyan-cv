@@ -16,7 +16,7 @@ export default function HomePage() {
         </p>
         <Link
           innerText="Check CV"
-          href="https://drive.google.com/file/d/1B6Admg8mmBB4NmjC9Zrr8SszXxBQnKkX/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nVpxSIWo3TmePZZbKlAQtd3aOdLULKr8/view?usp=sharing"
         />
       </div>
 
