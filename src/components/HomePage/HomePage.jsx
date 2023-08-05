@@ -14,7 +14,7 @@ export default function HomePage() {
         </p>
         <a
           className="underline"
-          href="/src/files/Oganisyan-Oganes-CV.pdf"
+          href="https://drive.google.com/file/d/1B6Admg8mmBB4NmjC9Zrr8SszXxBQnKkX/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
