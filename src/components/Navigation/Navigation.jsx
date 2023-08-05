@@ -6,7 +6,7 @@ export default function Navigation() {
   const [dropdown, setDropdown] = useState(false);
   return (
     <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <h1 className="text-2xl">🖖🏻</h1>
+      <h1 className="text-2xl">👋🏻</h1>
       <button
         onClick={() => setDropdown(!dropdown)}
         className="inline-flex items-center justify-center p-2 w-10 h-10 ml-3 hover:bg-gray-100"
