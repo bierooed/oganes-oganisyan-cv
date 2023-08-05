@@ -16,6 +16,10 @@
     {
       "src": "/cv",
       "dest": "/"
+    },
+    {
+      "src": "/src/files/Oganisyan-Oganes-CV.pdf",
+      "dest": "/"
     }
   ]
 }
