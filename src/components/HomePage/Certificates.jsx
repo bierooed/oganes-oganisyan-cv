@@ -26,7 +26,7 @@ const certificates = [
 
 export default function Certificates() {
   return (
-    <div className="flex md:flex-nowrap xs: flex-wrap justify-between w-full text-center md:mt-28 xs: mt-8 p-4">
+    <div className="flex md:flex-nowrap xs: flex-wrap justify-between w-full text-center md:mt-20 xs: mt-8 p-4">
       {certificates.map(({ id, issued, pic, course, date, verifyUrl }) => {
         return (
           <div key={id} className="w-full flex flex-col  items-center mb-12">

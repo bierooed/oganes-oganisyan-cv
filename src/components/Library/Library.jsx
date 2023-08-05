@@ -105,7 +105,7 @@ export default function Library() {
                     type === "fiction"
                       ? "bg-purple-100 text-purple-800"
                       : "bg-green-100 text-green-800"
-                  } mx-3 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300`}
+                  } mx-3 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full`}
                 >
                   {type}
                 </span>
