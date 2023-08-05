@@ -22,7 +22,7 @@ export default function HomePage() {
 
       <Certificates />
 
-      <div className="flex items-center flex-col">
+      <div className="flex items-center flex-col mb-6">
         <h3 className="font-bold text-xl">Contacts</h3>
         <div className="text-center mt-4">
           <p>Phone: + (374) 93 784979</p>
