@@ -46,17 +46,16 @@ const projects = [
         href: "https://vercel.com/bierooed/cognitive-test",
         innerText: "Non-production link",
       },
-    ],
 
-    downloadedLinks: [
-      {
-        id: 0,
-        href: "/src/files/Developed with love in Armenia.pdf",
-        innerText: "Course work presentation (pdf)",
-      },
       {
         id: 1,
-        href: "/src/files/Курсовая работа Оганисян Оганес .pdf",
+        href: "https://www.canva.com/design/DAFkHE2XXhU/yZ9nIs-qhFOEgOwBeWwP9A/edit?utm_content=DAFkHE2XXhU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+        innerText: "Course work presentation",
+      },
+
+      {
+        id: 2,
+        href: "https://drive.google.com/file/d/1K6tBQWu4mNDEsJzrx9QDUTK9YMakQ12i/view?usp=sharing",
         innerText: "Course work presentation",
       },
     ],
@@ -177,42 +176,35 @@ const projects = [
 export default function Projects() {
   return (
     <div className="flex flex-col items-center p-4">
-      {projects.map(
-        ({ id, project, stack, description, pic, links, downloadedLinks }) => {
-          return (
-            <div
-              key={id}
-              className={`text-center ${
-                id === projects.length - 1 ? "" : "border-b border-gray-300"
-              } mt-8`}
-            >
-              <img src={pic} />
-              <h3>{project}</h3>
-              <div className="flex flex-col flex-wrap items-center justify-center">
-                <div className="flex flex-wrap justify-center items-center">
-                  {!!links && <Links links={links} />}
-                </div>
-                <div className="flex flex-wrap mt-3 justify-center items-center">
-                  {!!downloadedLinks && (
-                    <Links isDownload={true} links={downloadedLinks} />
-                  )}
-                </div>
-              </div>
-              <p className="py-4">{description}</p>
-              <div className="flex justify-center flex-wrap mb-6">
-                {stack.map((tech, idx) => (
-                  <span
-                    key={idx}
-                    className="inline-flex items-center gap-1.5 py-1.5 my-2 px-3 mx-2 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
-                  >
-                    {tech}
-                  </span>
-                ))}
+      {projects.map(({ id, project, stack, description, pic, links }) => {
+        return (
+          <div
+            key={id}
+            className={`text-center ${
+              id === projects.length - 1 ? "" : "border-b border-gray-300"
+            } mt-8`}
+          >
+            <img src={pic} />
+            <h3>{project}</h3>
+            <div className="flex flex-col flex-wrap items-center justify-center">
+              <div className="flex flex-wrap justify-center items-center">
+                {!!links && <Links links={links} />}
               </div>
             </div>
-          );
-        }
-      )}
+            <p className="py-4">{description}</p>
+            <div className="flex justify-center flex-wrap mb-6">
+              {stack.map((tech, idx) => (
+                <span
+                  key={idx}
+                  className="inline-flex items-center gap-1.5 py-1.5 my-2 px-3 mx-2 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
