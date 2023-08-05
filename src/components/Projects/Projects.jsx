@@ -144,24 +144,29 @@ const projects = [
     links: [
       {
         id: 0,
+        href: "https://www.codewars.com/users/bierooed",
+        innerText: "Codewars",
+      },
+      {
+        id: 1,
         href: "https://replit.com/@bierooed/GAMEwordJumble-20",
         innerText: "Word Jumble",
       },
 
       {
-        id: 1,
+        id: 2,
         href: "https://replit.com/@bierooed/guessMyNumber#main.cpp",
         innerText: "Guess my number",
       },
 
       {
-        id: 2,
+        id: 3,
         href: "https://github.com/bierooed/exploringNodejs",
         innerText: "Exploring NodeJS",
       },
 
       {
-        id: 3,
+        id: 4,
         href: "https://github.com/bierooed/Linux-Tasks",
         innerText: "Linux tasks",
       },
