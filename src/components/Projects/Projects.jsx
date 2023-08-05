@@ -97,7 +97,7 @@ const projects = [
   {
     id: 4,
     project: "Random Quote Machine",
-    stack: ["JavaScript"],
+    stack: ["JavaScript", "React"],
     pic: randomQuoteProject,
     description: "Just random quotes!",
     links: [
