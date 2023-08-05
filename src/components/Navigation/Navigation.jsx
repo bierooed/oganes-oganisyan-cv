@@ -4,6 +4,7 @@ import { paths } from "../../paths";
 
 export default function Navigation() {
   const [dropdown, setDropdown] = useState(false);
+  const handleDropdown = () => setDropdown(false);
   return (
     <nav className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <h1 className="text-2xl">👋🏻</h1>
@@ -30,9 +31,21 @@ export default function Navigation() {
       </button>
       <div className={`${dropdown ? "" : "hidden"} w-full`}>
         <div className="flex flex-col font-medium mt-4 rounded-lg">
-          <NavigationLink path={paths.home} innerText="About me" />
-          <NavigationLink path={paths.projects} innerText="Projects" />
-          <NavigationLink path={paths.library} innerText="Library" />
+          <NavigationLink
+            handleDropdown={handleDropdown}
+            path={paths.home}
+            innerText="About me"
+          />
+          <NavigationLink
+            handleDropdown={handleDropdown}
+            path={paths.projects}
+            innerText="Projects"
+          />
+          <NavigationLink
+            handleDropdown={handleDropdown}
+            path={paths.library}
+            innerText="Library"
+          />
         </div>
       </div>
     </nav>
