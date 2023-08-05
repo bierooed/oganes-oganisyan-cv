@@ -14,10 +14,11 @@ export default function HomePage() {
         </p>
         <a
           className="underline"
-          download
           href="/src/files/Oganisyan-Oganes-CV.pdf"
+          target="_blank"
+          rel="noreferrer"
         >
-          Download CV
+          Check CV
         </a>
       </div>
 
