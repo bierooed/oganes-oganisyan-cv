@@ -4,6 +4,8 @@ import cognitiveProject from "../../files/cognitiveProject.png";
 import sightseeingProject from "../../files/sightseeingProject.png";
 import tmImageModelProject from "../../files/tm-image-model-project.png";
 import randomQuoteProject from "../../files/randomQuoteProject.png";
+import phraseSearchProject from "../../files/phrase-search-project.png";
+
 import Links from "./Links";
 
 const projects = [
@@ -95,6 +97,22 @@ const projects = [
 
   {
     id: 4,
+    project: "Phrase search algorithm",
+    stack: ["Python", "Algorithms"],
+    pic: phraseSearchProject,
+    description:
+      " The project was to implement a search algorithm that would go through all text documents and try to find matches in the texts for a given phrase. The inverted index method was used as a rather effective approach for working with a large volume of text documents.",
+    links: [
+      {
+        id: 0,
+        href: "https://github.com/bierooed/phrase-search-algorithm",
+        innerText: "Github",
+      },
+    ],
+  },
+
+  {
+    id: 5,
     project: "Random Quote Machine",
     stack: ["JavaScript", "React"],
     pic: randomQuoteProject,
@@ -109,7 +127,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     project: "My articles",
     stack: ["📝", "Writing"],
     description: "I've left links to my articles here",
@@ -135,7 +153,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     project: "Additionally",
     stack: ["C++", "NodeJS", "Linux"],
     description:
