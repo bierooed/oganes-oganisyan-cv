@@ -5,12 +5,35 @@ import sightseeingProject from "../../files/sightseeingProject.png";
 import tmImageModelProject from "../../files/tm-image-model-project.png";
 import randomQuoteProject from "../../files/randomQuoteProject.png";
 import phraseSearchProject from "../../files/phrase-search-project.png";
+import simonGame from "../../files/simonGame.png";
 
 import Links from "./Links";
 
 const projects = [
   {
     id: 0,
+    project: "Simon Game",
+    stack: ["Vue.js"],
+    pic: simonGame,
+    role: "Frontend Developer",
+
+    description: "Wrote the famous game 'The Simon' on pure Vue.js",
+
+    links: [
+      {
+        id: 0,
+        href: "https://bierooed.github.io/simon-the-game-vue/",
+        innerText: "gh-pages",
+      },
+      {
+        id: 1,
+        href: "https://github.com/bierooed/simon-the-game-vue",
+        innerText: "Github",
+      },
+    ],
+  },
+  {
+    id: 1,
     project: "HYE box",
     stack: [
       "React",
@@ -35,7 +58,7 @@ const projects = [
   },
 
   {
-    id: 1,
+    id: 2,
     project: "Cognitive test",
     stack: ["React", "Redux", "TensorflowJS", "Firebase", "Tailwind"],
     pic: cognitiveProject,
@@ -64,7 +87,7 @@ const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     project: "Sightseeing",
     stack: ["React", "Teachable Machine"],
     pic: sightseeingProject,
@@ -80,7 +103,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     project: "Teachable Machine model to classify images",
     stack: ["JavaScript", "Tensorflow"],
     pic: tmImageModelProject,
@@ -96,7 +119,7 @@ const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     project: "Phrase search algorithm",
     stack: ["Python", "Algorithms"],
     pic: phraseSearchProject,
@@ -112,7 +135,7 @@ const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     project: "Random Quote Machine",
     stack: ["JavaScript", "React"],
     pic: randomQuoteProject,
@@ -127,7 +150,7 @@ const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     project: "My articles",
     stack: ["📝", "Writing"],
     description: "I've left links to my articles here",
@@ -153,7 +176,7 @@ const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     project: "Additionally",
     stack: ["C++", "NodeJS", "Linux"],
     description:
